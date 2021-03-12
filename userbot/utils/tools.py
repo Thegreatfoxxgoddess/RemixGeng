@@ -20,7 +20,7 @@ from telethon.tl.types import MessageEntityPre
 
 from userbot import bot
 from userbot import LOGS
-from SUDO_LIST
+from userbot import SUDO_LIST
 
 async def md5(fname: str) -> str:
     hash_md5 = hashlib.md5()
