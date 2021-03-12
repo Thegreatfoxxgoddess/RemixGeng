@@ -213,6 +213,7 @@ async def pipcheck(pip):
 
 
 @register(outgoing=True, pattern="^.start$")
+@bot.on(sudo_cmd(pattern="start$", allow_sudo=True))
 async def amireallyalive(alive):
     """ For .start command, check if the bot is running.  """
     logo = ALIVE_LOGO
